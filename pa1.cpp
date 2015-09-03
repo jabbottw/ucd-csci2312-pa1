@@ -24,7 +24,6 @@ int main(void)
     cout << "Side b, Distance between points A and C: " << A.distanceTo(C) << endl;
     cout << "Side c, Distance between points A and B: " << A.distanceTo(B) << endl;
     cout << "Area of points A, B, & C: " << A.computeArea(A, B, C) << endl;
-    cout "test";
 
 
     return 0;
