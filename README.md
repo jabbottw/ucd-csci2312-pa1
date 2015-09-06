@@ -12,10 +12,12 @@ _working with objects_
 
 Point class for creating and working with points in three dimensional space
 
-Included files:
+Included C++ files:
 <tt>Point.h</tt>
 <tt>Point.cpp</tt>
 <tt>pa1.cpp</tt>
+
+Below is the source code for <tt>Point.h</tt>
 
 ```c++
 // A 2-dimensional point class!
