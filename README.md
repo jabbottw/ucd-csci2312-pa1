@@ -1,4 +1,10 @@
-## CSCI 2312: Programming Assignment 1
+/*****
+ * Created by Ivo Georgiev on 8/25/15.
+ * Edited by Julian Abbott-Whitley 8/30/2015
+ * CSCI 2312 Intermediate Programming
+ * University of Colorado Denver
+ * 1:00 PM T-Th
+ * ***/
 
 _working with objects_
 
