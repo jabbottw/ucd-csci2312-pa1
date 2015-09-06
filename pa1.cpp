@@ -18,9 +18,9 @@ double computeArea(Point &, Point &, Point &);   // Calculate area of a triangle
 
 int main(void)
 {
-    Point A(0, 0, 0);
-    Point B(0, 0, 10);
-    Point C(10, 10, 0);
+    Point A(0, 0, -10);
+    Point B(0, 10, 10);
+    Point C(0, 0, 10);
 
     cout << fixed << setprecision(2);
     cout << "\nSide a, Distance between points B and C: " << B.distanceTo(C) << endl;
