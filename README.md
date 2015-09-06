@@ -20,30 +20,43 @@ Included C++ files:
 Below is the source code for <tt>Point.h</tt>
 
 ```c++
-// A 2-dimensional point class!
+// A 3-dimensional point class!
 // Coordinates are double-precision floating point.
+
+#ifndef __point_h
+#define __point_h
+
 class Point {
 
 private:
-double x;
-double y;
+    double x;
+    double y;
+    double z;
 
 public:
-// Constructors
-Point();                      // default constructor
-Point(double x, double y);    // two-argument constructor
+    // Constructors
+    Point();                                // default constructor
+    Point(double x, double y, double z);    // three-argument constructor
 
-// Destructor
-~Point();
+    // Destructor
+    ~Point();
 
-// Mutator methods
-void setX(double newX);
-void setY(double newY);
+    // Mutator methods
+    void setX(double newX);
+    void setY(double newY);
+    void setZ(double newZ);
 
-// Accessor methods
-double getX();
-double getY();
+    // Accessor methods
+    double getX() const;
+    double getY() const;
+    double getZ() const;
+
+    // Auxiliary methods
+    double distanceTo(const Point &) const;              // Calculate distance between two point
+
 };
+
+#endif // __point_h
 ```
 
 We can _instantiate_, or create an instance of, our class anywhere in the rest of our code by calling any of the constructors we have defined:
