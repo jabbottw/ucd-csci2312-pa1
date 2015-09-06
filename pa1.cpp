@@ -9,9 +9,12 @@
 
 #include <iostream>
 #include <iomanip>
+#include <math.h>
 #include "Point.h"
 
 using namespace std;
+
+double computeArea(Point &, Point &, Point &);   // Calculate area of a triangle, given the three vertices
 
 int main(void)
 {
@@ -23,8 +26,22 @@ int main(void)
     cout << "\nSide a, Distance between points B and C: " << B.distanceTo(C) << endl;
     cout << "Side b, Distance between points A and C: " << A.distanceTo(C) << endl;
     cout << "Side c, Distance between points A and B: " << A.distanceTo(B) << endl;
-    cout << "Area of points A, B, & C: " << Point::computeArea(A, B, C) << endl;
+    cout << "Area of points A, B, & C: " << computeArea(A, B, C) << endl;
 
 
     return 0;
+}
+
+
+
+/***
+  * Static member function which calculates the area of a triangle using the three provided points
+  */
+double computeArea(Point &A, Point &B, Point &C)   // Calculate area of a triangle, given the three vertices
+{
+    double a = B.distanceTo(C);
+    double b = A.distanceTo(C);
+    double c = A.distanceTo(B);
+    double s = (a + b + c) / 2;
+    return sqrt(s * (s-a) * (s-b) * (s-c));
 }

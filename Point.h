@@ -31,7 +31,6 @@ public:
 
     // Auxiliary methods
     double distanceTo(const Point &) const;              // Calculate distance between two point
-    static double computeArea(Point &, Point &, Point &);   // Calculate area of a triangle, given the three vertices
 
 };
 

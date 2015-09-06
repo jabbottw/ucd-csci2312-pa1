@@ -73,15 +73,3 @@ double Point::distanceTo(const Point &b) const
 {
   return sqrt((pow((b.getX() - this->x), 2) + pow((b.getY() - this->y), 2) + pow((b.getZ() - this->z), 2)));
 }
-
-/***
-  * Static member function which calculates the area of a triangle using the three provided points
-  */
-double Point::computeArea(Point &A, Point &B, Point &C)   // Calculate area of a triangle, given the three vertices
-{
-    double a = B.distanceTo(C);
-    double b = A.distanceTo(C);
-    double c = A.distanceTo(B);
-    double s = (a + b + c) / 2;
-    return sqrt(s * (s-a) * (s-b) * (s-c));
-}
