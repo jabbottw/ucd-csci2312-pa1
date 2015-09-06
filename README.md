@@ -10,9 +10,12 @@ _working with objects_
 
 * * *
 
-C++ lets us program with _objects_. We describe objects in C++ by declaring and defining _classes_. We _declare_ our class's structure in a header file, just like in C, and _define_ it (that is, write the code that actually does the work) in a corresponding source code file.
+Point class for creating and working with points in three dimensional space
 
-Here is a sample header file <tt>Point.h</tt> that describes an object that represents a point in two-dimensional Euclidean space:
+Included files:
+<tt>Point.h</tt>
+<tt>Point.cpp</tt>
+<tt>pa1.cpp</tt>
 
 ```c++
 // A 2-dimensional point class!
