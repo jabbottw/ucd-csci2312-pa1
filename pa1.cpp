@@ -23,7 +23,7 @@ int main(void)
     cout << "\nSide a, Distance between points B and C: " << B.distanceTo(C) << endl;
     cout << "Side b, Distance between points A and C: " << A.distanceTo(C) << endl;
     cout << "Side c, Distance between points A and B: " << A.distanceTo(B) << endl;
-    cout << "Area of points A, B, & C: " << A.computeArea(A, B, C) << endl;
+    cout << "Area of points A, B, & C: " << Point::computeArea(A, B, C) << endl;
 
 
     return 0;

@@ -25,13 +25,13 @@ public:
     void setZ(double newZ);
 
     // Accessor methods
-    double getX();
-    double getY();
-    double getZ();
+    double getX() const;
+    double getY() const;
+    double getZ() const;
 
     // Auxiliary methods
-    double distanceTo(Point &);              // Calculate distance between two point
-    double computeArea(Point &, Point &, Point &);   // Calculate area of a triangle, given the three vertices
+    double distanceTo(const Point &) const;              // Calculate distance between two point
+    static double computeArea(Point &, Point &, Point &);   // Calculate area of a triangle, given the three vertices
 
 };
 
