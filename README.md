@@ -90,19 +90,6 @@ set(SOURCE_FILES Point.cpp PA1.cpp)
 add_executable(pa1 ${SOURCE_FILES})
 ```
 
-
-In CLion, you first have to build (Run-->Build) and then run (Run-->Run 'PA1') your project. Any output will appear in the built-in console.
-
-7.  Go back and test <tt>computeArea</tt> with several boundary and/or extreme cases to make sure your implementation is robust for all triangles, including degenerate ones. Things you might try:
-
-*   Triangles with no area - all three points on the same line
-*   Triangles where two points are the same
-*   Triangles where all three points are the same
-*   Triangles with negative coordinate values
-*   etc.
-
-
-
 * * *
 
 <font size="-1">ACKNOWLEDGEMENT: Modelled after CS11 Lab 1 at Caltech.</font>
