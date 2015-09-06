@@ -35,7 +35,7 @@ int main(void)
 
 
 /***
-  * Static member function which calculates the area of a triangle using the three provided points
+  * Global function which calculates the area of a triangle using the three provided points
   */
 double computeArea(Point &A, Point &B, Point &C)   // Calculate area of a triangle, given the three vertices
 {
